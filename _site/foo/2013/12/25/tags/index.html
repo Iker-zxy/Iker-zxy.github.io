@@ -14,7 +14,7 @@
 
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next muse use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -83,13 +83,13 @@
 <link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Foo,Bar,Baz," />
+  <meta name="keywords" content="Foo,Bar,Baz,test," />
 
 
 
 
 
-  <link rel="alternate" href="/atom.xml" title="blog" type="application/atom+xml" />
+  <link rel="alternate" href="/atom.xml" title="Xianyi" type="application/atom+xml" />
 
 
 
@@ -112,13 +112,13 @@
 
 
 <meta name="description" content="This post contains 3 tags. Make sure your theme can display all of the tags.">
-<meta name="keywords" content="Foo, Bar, Baz">
+<meta name="keywords" content="Foo, Bar, Baz, test">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Tags">
 <meta property="og:url" content="http://localhost:4000/foo/2013/12/25/tags/">
-<meta property="og:site_name" content="blog">
+<meta property="og:site_name" content="Xianyi">
 <meta property="og:description" content="This post contains 3 tags. Make sure your theme can display all of the tags.">
-<meta property="og:locale" content="zh-Hans">
+<meta property="og:locale" content="en">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Tags">
 <meta name="twitter:description" content="This post contains 3 tags. Make sure your theme can display all of the tags.">
@@ -134,7 +134,7 @@
     motion: true,
     duoshuo: {
       userId: '0',
-      author: '博主'
+      author: 'Author'
     },
     algolia: {
       applicationID: '',
@@ -154,7 +154,7 @@
 
 
 
-  <title>Tags | blog</title>
+  <title>Tags | Xianyi</title>
   
 
 
@@ -174,7 +174,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
 
   
   
@@ -190,7 +190,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">blog</span>
+        <span class="site-title">Xianyi</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -222,7 +222,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            首页
+            Home
           </a>
         </li>
       
@@ -234,7 +234,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            归档
+            Archives
           </a>
         </li>
       
@@ -246,7 +246,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            标签
+            Tags
           </a>
         </li>
       
@@ -289,7 +289,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="blog">
+      <meta itemprop="name" content="Xianyi">
     </span>
 
     
@@ -312,9 +312,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2013-12-25T07:29:53+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2013-12-25T07:29:53+08:00">
                 2013-12-25
               </time>
             
@@ -333,7 +333,7 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">In</span>
               
               
                 
@@ -429,6 +429,9 @@
             
             <a href="/tag/#/Baz" rel="tag"># Baz</a>
           
+            
+            <a href="/tag/#/test" rel="tag"># test</a>
+          
         </div>
       
 
@@ -472,6 +475,19 @@
 </div>
 
 
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+    }
+});
+</script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
           </div>
           
 
@@ -527,8 +543,8 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">15</span>
-                <span class="site-state-item-name">日志</span>
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">posts</span>
               </a>
             </div>
           
@@ -538,8 +554,8 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/">
-                <span class="site-state-item-count">8</span>
-                <span class="site-state-item-name">分类</span>
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">categories</span>
               </a>
             </div>
           
@@ -549,8 +565,8 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/">
-                <span class="site-state-item-count">6</span>
-                <span class="site-state-item-name">标签</span>
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">tags</span>
               </a>
             </div>
           
@@ -609,11 +625,11 @@
 
 
 <div class="powered-by">
-  由 <a class="theme-link" href="https://jekyllrb.com">Jekyll</a> 强力驱动
+  Powered by <a class="theme-link" href="https://jekyllrb.com">Jekyll</a>
 </div>
 
 <div class="theme-info">
-  主题 -
+  Theme -
   <a class="theme-link" href="https://github.com/simpleyyt/jekyll-theme-next">
     NexT.Muse
   </a>
