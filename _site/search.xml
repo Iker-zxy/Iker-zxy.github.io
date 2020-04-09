@@ -2,32 +2,115 @@
 <search>
   
     <entry>
-      <title><![CDATA[梯度下降与最小二乘]]></title>
-      <url>/class/2020/04/08/test/</url>
-      <content type="text"><![CDATA[梯度下降与最小二乘预备知识  一元函数泰勒公式$f(x+\Delta x)=f(x)+{f}’(x)\Delta x+\frac{1}{2}’‘(x)\Delta x^{2}+…$  多元函数泰勒展开$f(\overrightarrow{x}+\Delta{\overrightarrow{x}})=f(\overrightarrow{x})+[\nabla f(\overrightarrow{x})]^{T}\Delta \overrightarrow{x}+\frac{1}{2}\Delta \overrightarrow{x}^{T} \nabla ^{2}f(\overrightarrow{x})\Delta \overrightarrow{x}+…$其中，$[\nabla f(\overrightarrow{x})]^{T}=[\frac{\partial f}{\partial x_{1}},\frac{\partial f}{\partial x_{2}}…\frac{\partial f}{\partial x_{d}}],\nabla ^{2}f(\overrightarrow{x})=\begin{bmatrix} \frac{\partial^{2} f}{\partial x {1}\partial x _{1}}&amp; \frac{\partial^{2} f}{\partial x{2}\partial x {1}} &amp;\cdots &amp;\frac{\partial^{2} f}{\partial x{d}\partial x_{1}} \  \vdots &amp; \vdots &amp;\ddots  &amp;\vdots \  \frac{\partial^{2} f}{\partial x _{1}\partial x _{d}}&amp; \cdots &amp; \cdots &amp; \frac{\partial^{2} f}{\partial x _{d}\partial x _{d}}\end{bmatrix}$  极值点（极小值）$\nabla f(\overrightarrow{x})=0 ,\nabla ^{2}f(\overrightarrow{x})&gt;0$其中，满足$\nabla ^{2}f(\overrightarrow{x})&gt;0$的对称矩阵称为正定矩阵，充要条件为特征值大于零或者各阶主子式大于零梯度下降法：  原理求极小值，为保证：$f(\overrightarrow{x}+\Delta{\overrightarrow{x}})-f(\overrightarrow{x})=[\nabla f(\overrightarrow{x})]^{T}\Delta \overrightarrow{x}&lt;0$，取：$\Delta{\overrightarrow{x}}=-\alpha \nabla f(\overrightarrow{x})$为保证泰勒展开在领域内成立的条件，取：$\Delta{\overrightarrow{x}}=-\alpha \nabla f(\overrightarrow{x})$  步骤  取初始值$x_{i},i=(1,2,\cdots,n)$  求$\nabla f(\overrightarrow{x_{i}}),\Delta{\overrightarrow{x_{i}}}=-\nabla f(\overrightarrow{x_{i}})$  取$\overrightarrow{x_{i+1}}=\overrightarrow{x_{i}}+\alpha \Delta{\overrightarrow{x}}$  计算$\parallel f(\overrightarrow{x_{i+1}})-f(\overrightarrow{x_{i}})\parallel_{2}^{2}\leq\varepsilon $，若不等式成立则停止，否则$i=i+1$，重复2，3，4最小二乘法：  步骤      有n个数据对$ {\overrightarrow{x_{i}},y_{i}}$，其中$\overrightarrow{x_{i}}$是行向量（$i=1,2,3\cdots,d$）        构造常数项${\beta {0},\beta _{1},\cdots\beta _{d} }$；误差计算公式为：$\varepsilon =y{i}-(\overrightarrow{x_{i}}\overrightarrow{\beta}+\beta _{0}),i=1,2,3,\cdots,d$；其中$\overrightarrow{\beta }={\beta _{1},\beta _{2},\cdots\beta _{d} }^{T}$        损失函数为：                  $J(\overrightarrow{\beta},\beta_{0})=\frac{1}{n}\sum_{i=1}^{n}\varepsilon^{2}=\frac{1}{n}\sum_{i=1}^{n}(y_{i}-(\overrightarrow{x_{i}}\overrightarrow{\beta}+\beta {0}))^{2}=\frac{1}{n}\sum{i=1}^{n}(y_{i}-(\sum_{j=1}^{d}x_{ij}\beta _{j} +\beta _{0}))^{2}$                    令$x_{i0}=1(i=1,2,\cdots,n),\overrightarrow{\beta }={\beta _{0},\beta _{1},\cdots\beta _{d} }^{T}$，则可以写成                    进一步，令$X=\begin{bmatrix}1 &amp; x_{11} &amp;\cdots&amp;x_{1d}\\vdots&amp; \vdots&amp; \ddots&amp; \1&amp; x_{n1}&amp;\cdots&amp;x_{nd}\end{bmatrix}$，$Y=\begin{bmatrix}y_{1},y_{2},\cdots,y_{n}\\end{bmatrix}^{T}$,$B=[\beta_{0},\beta_{1},\cdots,\beta_{d}]^{T}$                      利用梯度下降法求解          参考matrix cookbook,对矩阵进行展开求导                ​	令梯度为零，则有：$-2X^{T}Y+2X^{T}XB=0,B=(X^{T}X)^{-1}X^{T}Y$          取$B_{i+1}={B_{i}}-\alpha \nabla J(B_{i})$      计算$\parallel J(B_{i+1})-J(B_{i})\parallel_{2}^{2}\leq\varepsilon $，若不等式成立则停止，否则$i=i+1$,重复1，2，3        附注：几类特殊函数的梯度公式  $\nabla (b^{T}X)=b$  $\nabla (X^{T}b)=b$  $\nabla (X^{T}X)=2X$  $\nabla (X^{T}AX)=2AX$（其中A为对称矩阵）]]></content>
+      <title><![CDATA[model]]></title>
+      <url>/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/2020/04/09/%E6%8E%92%E5%BA%8F/</url>
+      <content type="text"><![CDATA[]]></content>
       <categories>
         
-          <category> class </category>
+          <category> 机器学习 </category>
         
       </categories>
       <tags>
         
-          <tag> class </tag>
+          <tag> Loss </tag>
         
       </tags>
       <tags></tags>
     </entry>
   
     <entry>
-      <title><![CDATA[Block]]></title>
-      <url>/foo/2013/12/25/block/</url>
-      <content type="text"><![CDATA[This post is used for testing tag plugins. See docs for more info.Block QuoteNormal blockquote  Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.Code BlockInline code blockThis is a inline code block: python, print 'helloworld'.Normal code blockalert('Hello World!');print "Hello world"Highlight code blockprint "Hello world"def foo  puts 'foo'end123def foo  puts 'foo'endGist]]></content>
+      <title><![CDATA[手写代码]]></title>
+      <url>/%E7%AE%97%E6%B3%95/2020/04/09/%E6%89%8B%E5%86%99%E4%BB%A3%E7%A0%81/</url>
+      <content type="text"><![CDATA[快速排序def quick_sort(array, left, right):    if left &gt;= right:        return    low = left    high = right    key = array[low]    while left &lt; right:        while left &lt; right and array[right] &gt; key:            right -= 1        array[left] = array[right]        while left &lt; right and array[left] &lt;= key:            left += 1        array[right] = array[left]    array[right] = key    quick_sort(array, low, left - 1)]]></content>
       <categories>
         
-          <category> Foo </category>
+          <category> 算法 </category>
         
       </categories>
       <tags>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
+      <title><![CDATA[SVM]]></title>
+      <url>/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/2020/04/09/SVM/</url>
+      <content type="text"><![CDATA[This post is used for testing tag plugins. See docs for more info.Block QuoteNormal blockquote  Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.Code BlockInline code blockThis is a inline code block: python, print 'helloworld'.Normal code blockalert('Hello World!');print "Hello world"Highlight code blockprint "Hello world"def foo  puts 'foo'end123def foo  puts 'foo'endGist]]></content>
+      <categories>
+        
+          <category> 机器学习 </category>
+        
+      </categories>
+      <tags>
+        
+          <tag> SVM </tag>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
+      <title><![CDATA[PCA]]></title>
+      <url>/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/2020/04/09/PCA/</url>
+      <content type="text"><![CDATA[]]></content>
+      <categories>
+        
+          <category> 机器学习 </category>
+        
+      </categories>
+      <tags>
+        
+          <tag> PCA </tag>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
+      <title><![CDATA[Loss Function]]></title>
+      <url>/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/2020/04/09/Loss-Function/</url>
+      <content type="text"><![CDATA[Softmax交叉熵损失函数求导公式对于多分类问题，我们一般使用Softmax函数作为输出层的激活函数，用交叉熵作为损失函数。Softmax函数因其公式中分母为所有项之和，求导时非常不便，故特意单独拎出来进行推导，令损失函数为推导过程:根据链式法则，有上述的公式中会有求和的形式，主要是由于softmax公式的特性，它的分母包含了所有神经元的输出，所以，对于不等于$i$的其他输出里面，也包含着$z_{i}$，所有的$y$都要纳入到计算范围中对于$\frac{\partial y_{j}}{\partial z_{i}}$,需要分为$i=j$和$i≠j$两种情况求导      若$j = i$        若$j\neq i$  把两部分相结合，可以得到对于分类问题，只有一个类别为1，其余都为0，所以$\sum_{j}t_{j}=1$所以对于分类问题，有###]]></content>
+      <categories>
+        
+          <category> 机器学习 </category>
+        
+      </categories>
+      <tags>
+        
+          <tag> Loss </tag>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
+      <title><![CDATA[Linear Regression]]></title>
+      <url>/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/2020/04/09/LR/</url>
+      <content type="text"><![CDATA[This is a link post. Clicking on the link should open Google in a new tab or window.]]></content>
+      <categories>
+        
+          <category> 机器学习 </category>
+        
+      </categories>
+      <tags>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
+      <title><![CDATA[梯度下降与最小二乘]]></title>
+      <url>/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/2020/04/08/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E4%B8%8E%E6%9C%80%E5%B0%8F%E4%BA%8C%E4%B9%98/</url>
+      <content type="text"><![CDATA[梯度下降与最小二乘预备知识  一元函数泰勒公式$f(x+\Delta x)=f(x)+{f}’(x)\Delta x+\frac{1}{2}’‘(x)\Delta x^{2}+…$  多元函数泰勒展开$f(\overrightarrow{x}+\Delta{\overrightarrow{x}})=f(\overrightarrow{x})+[\nabla f(\overrightarrow{x})]^{T}\Delta \overrightarrow{x}+\frac{1}{2}\Delta \overrightarrow{x}^{T} \nabla ^{2}f(\overrightarrow{x})\Delta \overrightarrow{x}+…$其中，$[\nabla f(\overrightarrow{x})]^{T}=[\frac{\partial f}{\partial x_{1}},\frac{\partial f}{\partial x_{2}}…\frac{\partial f}{\partial x_{d}}],\nabla ^{2}f(\overrightarrow{x})=\begin{bmatrix} \frac{\partial^{2} f}{\partial x {1}\partial x _{1}}&amp; \frac{\partial^{2} f}{\partial x{2}\partial x {1}} &amp;\cdots &amp;\frac{\partial^{2} f}{\partial x{d}\partial x_{1}} \  \vdots &amp; \vdots &amp;\ddots  &amp;\vdots \  \frac{\partial^{2} f}{\partial x _{1}\partial x _{d}}&amp; \cdots &amp; \cdots &amp; \frac{\partial^{2} f}{\partial x _{d}\partial x _{d}}\end{bmatrix}$  极值点（极小值）$\nabla f(\overrightarrow{x})=0 ,\nabla ^{2}f(\overrightarrow{x})&gt;0$其中，满足$\nabla ^{2}f(\overrightarrow{x})&gt;0$的对称矩阵称为正定矩阵，充要条件为特征值大于零或者各阶主子式大于零梯度下降法：  原理求极小值，为保证：$f(\overrightarrow{x}+\Delta{\overrightarrow{x}})-f(\overrightarrow{x})=[\nabla f(\overrightarrow{x})]^{T}\Delta \overrightarrow{x}&lt;0$，取：$\Delta{\overrightarrow{x}}=-\alpha \nabla f(\overrightarrow{x})$为保证泰勒展开在领域内成立的条件，取：$\Delta{\overrightarrow{x}}=-\alpha \nabla f(\overrightarrow{x})$  步骤  取初始值$x_{i},i=(1,2,\cdots,n)$  求$\nabla f(\overrightarrow{x_{i}}),\Delta{\overrightarrow{x_{i}}}=-\nabla f(\overrightarrow{x_{i}})$  取$\overrightarrow{x_{i+1}}=\overrightarrow{x_{i}}+\alpha \Delta{\overrightarrow{x}}$  计算$\parallel f(\overrightarrow{x_{i+1}})-f(\overrightarrow{x_{i}})\parallel_{2}^{2}\leq\varepsilon $，若不等式成立则停止，否则$i=i+1$，重复2，3，4最小二乘法：  步骤      有n个数据对$ {\overrightarrow{x_{i}},y_{i}}$，其中$\overrightarrow{x_{i}}$是行向量（$i=1,2,3\cdots,d$）        构造常数项${\beta {0},\beta _{1},\cdots\beta _{d} }$；误差计算公式为：$\varepsilon =y{i}-(\overrightarrow{x_{i}}\overrightarrow{\beta}+\beta _{0}),i=1,2,3,\cdots,d$；其中$\overrightarrow{\beta }={\beta _{1},\beta _{2},\cdots\beta _{d} }^{T}$        损失函数为：                  $J(\overrightarrow{\beta},\beta_{0})=\frac{1}{n}\sum_{i=1}^{n}\varepsilon^{2}=\frac{1}{n}\sum_{i=1}^{n}(y_{i}-(\overrightarrow{x_{i}}\overrightarrow{\beta}+\beta {0}))^{2}=\frac{1}{n}\sum{i=1}^{n}(y_{i}-(\sum_{j=1}^{d}x_{ij}\beta _{j} +\beta _{0}))^{2}$                    令$x_{i0}=1(i=1,2,\cdots,n),\overrightarrow{\beta }={\beta _{0},\beta _{1},\cdots\beta _{d} }^{T}$，则可以写成                    进一步，令$X=\begin{bmatrix}1 &amp; x_{11} &amp;\cdots&amp;x_{1d}\\vdots&amp; \vdots&amp; \ddots&amp; \1&amp; x_{n1}&amp;\cdots&amp;x_{nd}\end{bmatrix}$，$Y=\begin{bmatrix}y_{1},y_{2},\cdots,y_{n}\\end{bmatrix}^{T}$,$B=[\beta_{0},\beta_{1},\cdots,\beta_{d}]^{T}$                      利用梯度下降法求解          参考matrix cookbook,对矩阵进行展开求导                ​	令梯度为零，则有：$-2X^{T}Y+2X^{T}XB=0,B=(X^{T}X)^{-1}X^{T}Y$          取$B_{i+1}={B_{i}}-\alpha \nabla J(B_{i})$      计算$\parallel J(B_{i+1})-J(B_{i})\parallel_{2}^{2}\leq\varepsilon $，若不等式成立则停止，否则$i=i+1$,重复1，2，3        附注：几类特殊函数的梯度公式  $\nabla (b^{T}X)=b$  $\nabla (X^{T}b)=b$  $\nabla (X^{T}X)=2X$  $\nabla (X^{T}AX)=2AX$（其中A为对称矩阵）]]></content>
+      <categories>
+        
+          <category> 机器学习 </category>
+        
+      </categories>
+      <tags>
+        
+          <tag> 梯度 </tag>
         
       </tags>
       <tags></tags>
@@ -47,44 +130,6 @@
         
       </categories>
       <tags>
-        
-      </tags>
-      <tags></tags>
-    </entry>
-  
-    <entry>
-      <title><![CDATA[Link Post]]></title>
-      <url>/foo/2013/12/25/link-post/</url>
-      <content type="text"><![CDATA[This is a link post. Clicking on the link should open Google in a new tab or window.]]></content>
-      <categories>
-        
-          <category> Foo </category>
-        
-      </categories>
-      <tags>
-        
-      </tags>
-      <tags></tags>
-    </entry>
-  
-    <entry>
-      <title><![CDATA[Tags]]></title>
-      <url>/foo/2013/12/25/tags/</url>
-      <content type="text"><![CDATA[This post contains 3 tags. Make sure your theme can display all of the tags.]]></content>
-      <categories>
-        
-          <category> Foo </category>
-        
-      </categories>
-      <tags>
-        
-          <tag> Foo </tag>
-        
-          <tag> Bar </tag>
-        
-          <tag> Baz </tag>
-        
-          <tag> test </tag>
         
       </tags>
       <tags></tags>

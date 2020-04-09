@@ -1,4 +1,99 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-08T12:28:31+08:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">Xianyi</title><author><name>Xianyi Zhang</name></author><entry><title type="html">梯度下降与最小二乘</title><link href="http://localhost:4000/class/2020/04/08/test/" rel="alternate" type="text/html" title="梯度下降与最小二乘" /><published>2020-04-08T00:00:00+08:00</published><updated>2020-04-08T00:00:00+08:00</updated><id>http://localhost:4000/class/2020/04/08/test</id><content type="html" xml:base="http://localhost:4000/class/2020/04/08/test/">&lt;h3 id=&quot;梯度下降与最小二乘&quot;&gt;梯度下降与最小二乘&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-09T08:00:39+08:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">Xianyi</title><author><name>Xianyi Zhang</name></author><entry><title type="html">SVM</title><link href="http://localhost:4000/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/2020/04/09/SVM/" rel="alternate" type="text/html" title="SVM" /><published>2020-04-09T00:00:00+08:00</published><updated>2020-04-09T00:00:00+08:00</updated><id>http://localhost:4000/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/2020/04/09/SVM</id><content type="html" xml:base="http://localhost:4000/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/2020/04/09/SVM/">&lt;p&gt;This post is used for testing tag plugins. See &lt;a href=&quot;http://zespia.tw/hexo/docs/tag-plugins.html&quot;&gt;docs&lt;/a&gt; for more info.&lt;/p&gt;
+
+&lt;h2 id=&quot;block-quote&quot;&gt;Block Quote&lt;/h2&gt;
+
+&lt;h3 id=&quot;normal-blockquote&quot;&gt;Normal blockquote&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;code-block&quot;&gt;Code Block&lt;/h2&gt;
+
+&lt;h3 id=&quot;inline-code-block&quot;&gt;Inline code block&lt;/h3&gt;
+
+&lt;p&gt;This is a inline code block: &lt;code class=&quot;highlighter-rouge&quot;&gt;python&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;print 'helloworld'&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;normal-code-block&quot;&gt;Normal code block&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;alert('Hello World!');
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;print &quot;Hello world&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;highlight-code-block&quot;&gt;Highlight code block&lt;/h3&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Hello world&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'foo'&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'foo'&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;gist&quot;&gt;Gist&lt;/h3&gt;
+
+&lt;script src=&quot;https://gist.github.com/996818.js&quot;&gt; &lt;/script&gt;</content><author><name>Xianyi Zhang</name></author><category term="SVM" /><summary type="html">This post is used for testing tag plugins. See docs for more info.</summary></entry><entry><title type="html">手写代码</title><link href="http://localhost:4000/%E7%AE%97%E6%B3%95/2020/04/09/%E6%89%8B%E5%86%99%E4%BB%A3%E7%A0%81/" rel="alternate" type="text/html" title="手写代码" /><published>2020-04-09T00:00:00+08:00</published><updated>2020-04-09T00:00:00+08:00</updated><id>http://localhost:4000/%E7%AE%97%E6%B3%95/2020/04/09/%E6%89%8B%E5%86%99%E4%BB%A3%E7%A0%81</id><content type="html" xml:base="http://localhost:4000/%E7%AE%97%E6%B3%95/2020/04/09/%E6%89%8B%E5%86%99%E4%BB%A3%E7%A0%81/">&lt;h3 id=&quot;快速排序&quot;&gt;快速排序&lt;/h3&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;quick_sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;left&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;low&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;left&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;high&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;right&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;low&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;left&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;left&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;right&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;right&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;left&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;right&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;left&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;quick_sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;low&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;left&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Xianyi Zhang</name></author><summary type="html">快速排序</summary></entry><entry><title type="html">Loss Function</title><link href="http://localhost:4000/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/2020/04/09/Loss-Function/" rel="alternate" type="text/html" title="Loss Function" /><published>2020-04-09T00:00:00+08:00</published><updated>2020-04-09T00:00:00+08:00</updated><id>http://localhost:4000/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/2020/04/09/Loss%20Function</id><content type="html" xml:base="http://localhost:4000/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/2020/04/09/Loss-Function/">&lt;h3 id=&quot;softmax交叉熵损失函数求导公式&quot;&gt;Softmax交叉熵损失函数求导公式&lt;/h3&gt;
+
+&lt;p&gt;对于多分类问题，我们一般使用Softmax函数作为输出层的激活函数，用交叉熵作为损失函数。&lt;/p&gt;
+
+&lt;p&gt;Softmax函数因其公式中分母为所有项之和，求导时非常不便，故特意单独拎出来进行推导，令
+&lt;script type=&quot;math/tex&quot;&gt;z_{i}=\sum_{j}w_{ij}x_{ij}+b\\
+y_{i}=\sigma(z_{i})=\frac{e^{z_{i}}}{\sum_{k}e^{z_{k}}}\\&lt;/script&gt;
+损失函数为
+&lt;script type=&quot;math/tex&quot;&gt;J=-\sum_{i}t_{i}\ln y_{i}&lt;/script&gt;
+&lt;strong&gt;推导过程:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;根据链式法则，有
+&lt;script type=&quot;math/tex&quot;&gt;\frac{\partial J}{\partial z_{i}}=\sum_{j}\frac{\partial J}{\partial y_{j}}\frac{\partial y_{j}}{\partial z_{i}}&lt;/script&gt;
+上述的公式中会有求和的形式，主要是由于softmax公式的特性，它的分母包含了所有神经元的输出，所以，对于不等于$i$的其他输出里面，也包含着$z_{i}$，所有的$y$都要纳入到计算范围中
+&lt;script type=&quot;math/tex&quot;&gt;\frac{\partial J}{\partial y_{j}}=\frac{\partial(-\sum_{i}t_{i}\ln y_{i})}{\partial y_{j}}=-\frac{t_{j}}{y_{j}}&lt;/script&gt;
+对于$\frac{\partial y_{j}}{\partial z_{i}}$,需要分为$i=j$和$i≠j$两种情况求导&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;若$j = i$
+&lt;script type=&quot;math/tex&quot;&gt;\frac{\partial y_{i}}{\partial z_{i}}=\frac{\partial \frac{e^{z_{i}}}{\sum_{k}e^{z_{k}}}}{\partial z_{i}} =\frac{e^{z_{i}}\sum_{k}e^{z_{k}}-(e^{z_{i}})^{2}}{(\sum_{k}e^{z_{k}})^{2}}=(\frac{e^{z_{i}}}{\sum_{k}e^{z_{k}}})(1-\frac{e^{z_{i}}}{\sum_{k}e^{z_{k}}})=y_{i}(1-y_{i})&lt;/script&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;若$j\neq i$&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{\partial y_{i}}{\partial z_{j}}=\frac{\partial \frac{e^{z_{j}}}{\sum_{k}e^{z_{k}}}}{\partial z_{i}} =-\frac{e^{z_{j}}e^{z_{i}}}{(\sum_{k}e^{z_{k}})^{2}}=-y_{i}y_{j}&lt;/script&gt;
+
+&lt;p&gt;把两部分相结合，可以得到
+&lt;script type=&quot;math/tex&quot;&gt;\frac{\partial J}{\partial z_{i}}=\sum_{j}(-\frac{t_{j}}{y_{j}})\frac{\partial y_{j}}{\partial z_{i}}=-\frac{t_{i}}{y_{i}}y_{i}(1-y_{i})+\sum_{j\neq i}\frac{t_{j}}{y_{j}}y_{i}y_{j}=-t_{i}+t_{i}y_{i}+\sum_{j\neq i}t_{j}y_{i}=-t_{i}+y_{i}\sum_{j}t_{j}&lt;/script&gt;
+对于分类问题，只有一个类别为1，其余都为0，所以$\sum_{j}t_{j}=1$&lt;/p&gt;
+
+&lt;p&gt;所以对于分类问题，有
+&lt;script type=&quot;math/tex&quot;&gt;\frac{\partial J}{\partial z_{i}}=y_{i}-t_{i}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;###&lt;/p&gt;</content><author><name>Xianyi Zhang</name></author><category term="Loss" /><summary type="html">Softmax交叉熵损失函数求导公式</summary></entry><entry><title type="html">Linear Regression</title><link href="http://localhost:4000/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/2020/04/09/LR/" rel="alternate" type="text/html" title="Linear Regression" /><published>2020-04-09T00:00:00+08:00</published><updated>2020-04-09T00:00:00+08:00</updated><id>http://localhost:4000/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/2020/04/09/LR</id><content type="html" xml:base="http://localhost:4000/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/2020/04/09/LR/">&lt;p&gt;This is a link post. Clicking on the link should open &lt;a href=&quot;http://www.google.com/&quot;&gt;Google&lt;/a&gt; in a new tab or window.&lt;/p&gt;</content><author><name>Xianyi Zhang</name></author><summary type="html">This is a link post. Clicking on the link should open Google in a new tab or window.</summary></entry><entry><title type="html">model</title><link href="http://localhost:4000/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/2020/04/09/%E6%8E%92%E5%BA%8F/" rel="alternate" type="text/html" title="model" /><published>2020-04-09T00:00:00+08:00</published><updated>2020-04-09T00:00:00+08:00</updated><id>http://localhost:4000/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/2020/04/09/%E6%8E%92%E5%BA%8F</id><content type="html" xml:base="http://localhost:4000/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/2020/04/09/%E6%8E%92%E5%BA%8F/"></content><author><name>Xianyi Zhang</name></author><category term="Loss" /><summary type="html"></summary></entry><entry><title type="html">PCA</title><link href="http://localhost:4000/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/2020/04/09/PCA/" rel="alternate" type="text/html" title="PCA" /><published>2020-04-09T00:00:00+08:00</published><updated>2020-04-09T00:00:00+08:00</updated><id>http://localhost:4000/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/2020/04/09/PCA</id><content type="html" xml:base="http://localhost:4000/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/2020/04/09/PCA/"></content><author><name>Xianyi Zhang</name></author><category term="PCA" /><summary type="html"></summary></entry><entry><title type="html">梯度下降与最小二乘</title><link href="http://localhost:4000/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/2020/04/08/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E4%B8%8E%E6%9C%80%E5%B0%8F%E4%BA%8C%E4%B9%98/" rel="alternate" type="text/html" title="梯度下降与最小二乘" /><published>2020-04-08T00:00:00+08:00</published><updated>2020-04-08T00:00:00+08:00</updated><id>http://localhost:4000/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/2020/04/08/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E4%B8%8E%E6%9C%80%E5%B0%8F%E4%BA%8C%E4%B9%98</id><content type="html" xml:base="http://localhost:4000/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/2020/04/08/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E4%B8%8E%E6%9C%80%E5%B0%8F%E4%BA%8C%E4%B9%98/">&lt;h3 id=&quot;梯度下降与最小二乘&quot;&gt;梯度下降与最小二乘&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;预备知识&lt;/strong&gt;&lt;/p&gt;
 
@@ -112,49 +207,7 @@
   &lt;li&gt;$\nabla (X^{T}b)=b$&lt;/li&gt;
   &lt;li&gt;$\nabla (X^{T}X)=2X$&lt;/li&gt;
   &lt;li&gt;$\nabla (X^{T}AX)=2AX$（其中A为对称矩阵）&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Xianyi Zhang</name></author><category term="class" /><summary type="html">梯度下降与最小二乘</summary></entry><entry><title type="html">Block</title><link href="http://localhost:4000/foo/2013/12/25/block/" rel="alternate" type="text/html" title="Block" /><published>2013-12-25T08:14:39+08:00</published><updated>2013-12-25T08:14:39+08:00</updated><id>http://localhost:4000/foo/2013/12/25/block</id><content type="html" xml:base="http://localhost:4000/foo/2013/12/25/block/">&lt;p&gt;This post is used for testing tag plugins. See &lt;a href=&quot;http://zespia.tw/hexo/docs/tag-plugins.html&quot;&gt;docs&lt;/a&gt; for more info.&lt;/p&gt;
-
-&lt;h2 id=&quot;block-quote&quot;&gt;Block Quote&lt;/h2&gt;
-
-&lt;h3 id=&quot;normal-blockquote&quot;&gt;Normal blockquote&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;code-block&quot;&gt;Code Block&lt;/h2&gt;
-
-&lt;h3 id=&quot;inline-code-block&quot;&gt;Inline code block&lt;/h3&gt;
-
-&lt;p&gt;This is a inline code block: &lt;code class=&quot;highlighter-rouge&quot;&gt;python&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;print 'helloworld'&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;normal-code-block&quot;&gt;Normal code block&lt;/h3&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;alert('Hello World!');
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;print &quot;Hello world&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;highlight-code-block&quot;&gt;Highlight code block&lt;/h3&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Hello world&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'foo'&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'foo'&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;gist&quot;&gt;Gist&lt;/h3&gt;
-
-&lt;script src=&quot;https://gist.github.com/996818.js&quot;&gt; &lt;/script&gt;</content><author><name>Xianyi Zhang</name></author><summary type="html">This post is used for testing tag plugins. See docs for more info.</summary></entry><entry><title type="html">Categories</title><link href="http://localhost:4000/foo/bar/baz/2013/12/25/categories/" rel="alternate" type="text/html" title="Categories" /><published>2013-12-25T07:30:09+08:00</published><updated>2013-12-25T07:30:09+08:00</updated><id>http://localhost:4000/foo/bar/baz/2013/12/25/categories</id><content type="html" xml:base="http://localhost:4000/foo/bar/baz/2013/12/25/categories/">&lt;p&gt;This post contains 3 categories. Make sure your theme can display all of the categories.&lt;/p&gt;</content><author><name>Xianyi Zhang</name></author><summary type="html">This post contains 3 categories. Make sure your theme can display all of the categories.</summary></entry><entry><title type="html">Link Post</title><link href="http://localhost:4000/foo/2013/12/25/link-post/" rel="alternate" type="text/html" title="Link Post" /><published>2013-12-25T07:30:04+08:00</published><updated>2013-12-25T07:30:04+08:00</updated><id>http://localhost:4000/foo/2013/12/25/link-post</id><content type="html" xml:base="http://localhost:4000/foo/2013/12/25/link-post/">&lt;p&gt;This is a link post. Clicking on the link should open &lt;a href=&quot;http://www.google.com/&quot;&gt;Google&lt;/a&gt; in a new tab or window.&lt;/p&gt;</content><author><name>Xianyi Zhang</name></author><summary type="html">This is a link post. Clicking on the link should open Google in a new tab or window.</summary></entry><entry><title type="html">Tags</title><link href="http://localhost:4000/foo/2013/12/25/tags/" rel="alternate" type="text/html" title="Tags" /><published>2013-12-25T07:29:53+08:00</published><updated>2013-12-25T07:29:53+08:00</updated><id>http://localhost:4000/foo/2013/12/25/tags</id><content type="html" xml:base="http://localhost:4000/foo/2013/12/25/tags/">&lt;p&gt;This post contains 3 tags. Make sure your theme can display all of the tags.&lt;/p&gt;</content><author><name>Xianyi Zhang</name></author><category term="Foo" /><category term="Bar" /><category term="Baz" /><category term="test" /><summary type="html">This post contains 3 tags. Make sure your theme can display all of the tags.</summary></entry><entry><title type="html">Elements</title><link href="http://localhost:4000/foo/2013/12/25/elements/" rel="alternate" type="text/html" title="Elements" /><published>2013-12-25T07:29:08+08:00</published><updated>2013-12-25T07:29:08+08:00</updated><id>http://localhost:4000/foo/2013/12/25/elements</id><content type="html" xml:base="http://localhost:4000/foo/2013/12/25/elements/">&lt;p&gt;The purpose of this post is to help you make sure all of HTML elements can display properly. If you use CSS reset, don’t forget to redefine the style by yourself.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Xianyi Zhang</name></author><category term="梯度" /><summary type="html">梯度下降与最小二乘</summary></entry><entry><title type="html">Categories</title><link href="http://localhost:4000/foo/bar/baz/2013/12/25/categories/" rel="alternate" type="text/html" title="Categories" /><published>2013-12-25T07:30:09+08:00</published><updated>2013-12-25T07:30:09+08:00</updated><id>http://localhost:4000/foo/bar/baz/2013/12/25/categories</id><content type="html" xml:base="http://localhost:4000/foo/bar/baz/2013/12/25/categories/">&lt;p&gt;This post contains 3 categories. Make sure your theme can display all of the categories.&lt;/p&gt;</content><author><name>Xianyi Zhang</name></author><summary type="html">This post contains 3 categories. Make sure your theme can display all of the categories.</summary></entry><entry><title type="html">Elements</title><link href="http://localhost:4000/foo/2013/12/25/elements/" rel="alternate" type="text/html" title="Elements" /><published>2013-12-25T07:29:08+08:00</published><updated>2013-12-25T07:29:08+08:00</updated><id>http://localhost:4000/foo/2013/12/25/elements</id><content type="html" xml:base="http://localhost:4000/foo/2013/12/25/elements/">&lt;p&gt;The purpose of this post is to help you make sure all of HTML elements can display properly. If you use CSS reset, don’t forget to redefine the style by yourself.&lt;/p&gt;
 
 &lt;hr /&gt;
 

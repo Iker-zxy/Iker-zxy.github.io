@@ -90,7 +90,7 @@ rss:
 since: 2020
 
 # icon between year and author @Footer
-authoricon:
+authoricon: heart
 
 # Footer `powered-by` and `theme-info` copyright
 copyright: true
@@ -227,13 +227,13 @@ social_icons:
   # Icon Mappings.
   # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
   GitHub: https://github.com/Iker-zxy
-  # Twitter: twitter
-  # Weibo: weibo
+  Twitter: twitter
+  Weibo: weibo
 
 
 # Sidebar Avatar
 # in directory: /assets/images/avatar.gif
-# avatar
+# avatar:
 
 
 # Table Of Contents in the Sidebar
